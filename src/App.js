@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "./Components/HeadersComponents/Header";
+import AboutUs from "./Components/BodyComponents/AboutUs";
+import Portfolio from "./Components/BodyComponents/Portfolio";
+import Contact from "./Components/BodyComponents/Contact";
+import Footer from "./Components/BodyComponents/Footer";
+// npm i @material-ui/core @material-ui/icons
 
 function App() {
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <>
+       <Header />
+       <AboutUs />
+       <Portfolio />
+       <Contact />
+       <Footer /> 
+
+      </>
+        
     </div>
   );
 }
